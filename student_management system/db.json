@@ -1,0 +1,20 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Kuldeep Patel",
+      "email": "kuldeep@gmail.com",
+      "course": "React JS",
+      "phone": "9876543210",
+      "age": "23"
+    },
+    {
+      "id": "e874",
+      "name": "Kuldeep patel",
+      "email": "5079kuldeeppatel@gmail.com",
+      "course": "fullstack",
+      "phone": "08141629901",
+      "age": "33"
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a; /* dark bluish */
+  color: #e5e7eb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background: linear-gradient(90deg, #020617, #020617cc);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #cbd5f5 !important;
+  margin-right: 10px;
+}
+
+.nav-link:hover {
+  color: #38bdf8 !important;
+}
+
+/* =========================
+   MOVIE CARDS
+========================= */
+.card {
+  background: #020617;
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+}
+
+.card-img-top {
+  height: 350px;
+  object-fit: cover;
+}
+
+.card-body {
+  background: #020617;
+}
+
+.card-body h6 {
+  color: #f8fafc;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* GSAP animation hook */
+.movie-card {
+  will-change: transform, opacity;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn-dark {
+  background: linear-gradient(135deg, #1e293b, #020617);
+  border: none;
+}
+
+.btn-dark:hover {
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, #facc15, #eab308);
+  border: none;
+  color: #000;
+  font-weight: 600;
+}
+
+/* =========================
+   LOADER
+========================= */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* =========================
+   MOVIE DETAILS PAGE
+========================= */
+.movie-details img {
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+.movie-details h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.movie-details p {
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+/* =========================
+   SEARCH INPUT
+========================= */
+input.form-control {
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #f8fafc;
+}
+
+input.form-control::placeholder {
+  color: #64748b;
+}
+
+input.form-control:focus {
+  background: #020617;
+  color: #fff;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 0.2rem rgba(56, 189, 248, 0.25);
+}
+
+/* =========================
+   FAVORITES SECTION
+========================= */
+.favorites-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 280px;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+}
+/* =========================
+   AUTH (LOGIN / SIGNUP)
+========================= */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background: #020617;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+}
+
+.auth-card h3 {
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+.auth-card input {
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #fff;
+}
+
+.auth-card input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 0.2rem rgba(56, 189, 248, 0.25);
+}
+
+.toggle-text {
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+.toggle-text:hover {
+  text-decoration: underline;
+}

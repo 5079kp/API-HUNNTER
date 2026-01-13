@@ -1,0 +1,24 @@
+.dashboard {
+  @apply min-h-screen flex;
+}
+
+.sidebar {
+  @apply w-64 bg-slate-950 p-6 border-r border-slate-800;
+}
+
+.sidebar h2 {
+  @apply text-xl font-bold mb-6;
+}
+
+.sidebar a {
+  @apply block py-2 px-3 rounded-lg text-gray-300
+         hover:bg-slate-800 hover:text-white transition;
+}
+
+.main-content {
+  @apply flex-1 p-8 overflow-y-auto;
+}
+
+.card {
+  @apply glass p-6 shadow-xl;
+}
